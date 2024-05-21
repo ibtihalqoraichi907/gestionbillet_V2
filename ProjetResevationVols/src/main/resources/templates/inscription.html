@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/5.3.3/css/bootstrap.min.css">
+    <title>Inscrivez-vous</title>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">Ibyome</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="creatClient">Inscription</a>
+                </li>
+            </ul>
+            <div>
+                <a class="nav-link text-white" href="/connexion">Login</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="text">
+        Inscrivez-vous
+    </div>
+    <form th:action="@{saveClient}" method="post">
+        <div class="form-row">
+            <div class="input-data">
+                <input type="text" id="nom" name="nom" required>
+                <div class="underline"></div>
+                <label for="nom">Nom</label>
+            </div>
+            <div class="input-data">
+                <input type="text" id="prenom" name="prenom" required>
+                <div class="underline"></div>
+                <label for="prenom">Prenom</label>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="input-data">
+                <input type="email" id="mail" name="mail" required>
+                <div class="underline"></div>
+                <label for="mail">Email</label>
+            </div>
+            <div class="input-data">
+                <input type="text" id="password" name="password" required>
+                <div class="underline"></div>
+                <label for="password">Mot de passe</label>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="input-data">
+                <input type="date" id="datenaissance" name="datenaissance" required>
+                <div class="underline"></div>
+                <label for="datenaissance"></label>
+            </div>
+            <div class="input-data">
+                <input type="tel" id="tel" name="tel" required>
+                <div class="underline"></div>
+                <label for="tel">Telephone</label>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="input-data textarea">
+                <br />
+                <div class="underline"></div>
+                <label for="adresse">Adresse</label>
+                <input type="text" id="adresse" name="adresse" required>
+                <br />
+                <div class="form-row submit-btn">
+                    <div class="input-data">
+                        <div class="inner"></div>
+                        <input type="submit" value="s'inscrire">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>
+</main>
+
+</body>
+</html>
+
+

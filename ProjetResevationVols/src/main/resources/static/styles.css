@@ -1,0 +1,137 @@
+.navbar {
+    background-color: #fffffffe;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 75px; /* taille du logo  */
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin-right: 80px;
+}
+
+.menu a {
+    color: rgb(2, 1, 1);
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #dbcdcd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffe2e2;
+    min-width: 160px;
+    z-index: 2;
+    text-align: center;
+}
+
+.dropdown-content li {
+    display: inline-block;
+}
+
+.dropdown-content li a {
+    color: black;
+    padding: 4px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content li a:hover {
+    background-color: #f9efef;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fbfbfb;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 60%; /* largeur  */
+    margin: 100px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+}
+input[type="text"],
+input[type="date"] {
+    width: calc(100% - 40px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 20px; /* marge */
+}
+
+button[type="submit"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    background-color: #8d7b7b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffd3d3;
+    transition: background-color 0.3s;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7efef;
+    margin: 0;
+    padding: 0;
+}
